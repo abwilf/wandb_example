@@ -7,8 +7,8 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=dummyblah123@gmail.com # TODO
 #SBATCH --chdir=/work/awilf/wandb_example/ # TODO
-#SBATCH --output=/work/awilf/wandb_example/logs/slurm-%j.out # TODO
-#SBATCH --error=/work/awilf/wandb_example/logs/slurm-%j.err # TODO
+#SBATCH --output=/work/awilf/wandb_example/logs/%j.out # TODO
+#SBATCH --error=/work/awilf/wandb_example/logs/%j.err # TODO
 
 singularity exec -B /work/awilf/ --nv /results/awilf/imgs/tvqa_graph.sif \
-wandb agent socialiq/wandb_example/n59lamsn
+wandb agent socialiq/wandb_example/s6ntk05o

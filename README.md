@@ -1,9 +1,12 @@
 # wandb
 Note: `taro` is my local machine. Replace all instances of `taro` with yours, and all instances of `awilf` with your andrewid. Atlas is the name of our cluster; it can be any slurm based cluster.
 
+This is just a simple example to get you started.
+
 ## Motivation
 
 ## Installing dependencies
+`torch, torchvision, wandb`
 
 ## Development on Local
 

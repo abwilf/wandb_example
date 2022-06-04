@@ -13,7 +13,7 @@ parameters:
   batch_size:
     value: 10
   epochs:
-    value: 1
+    value: 2
   fc_layer_size:
     values:
     - 128
