@@ -1,7 +1,6 @@
 #!/bin/bash
-#SBATCH -p gpu_low
-#SBATCH --gres=gpu:1
-#SBATCH --mem 10GB 
+#SBATCH -p cpu_low
+#SBATCH --mem 1GB 
 #SBATCH --time 1-00:00
 #SBATCH --exclude=compute-0-19
 #SBATCH --mail-type=ALL
@@ -10,6 +9,4 @@
 #SBATCH --output=/work/awilf/wandb_example/logs/%j.out # TODO
 #SBATCH --error=/work/awilf/wandb_example/logs/%j.err # TODO
 
-singularity exec -B /work/awilf/ --nv /results/awilf/imgs/tvqa_graph.sif \
-wandb agent socialiq/wandb_example/s6ntk05o
-echo "a" >> email_log.txt
+python email_checker.py 3
